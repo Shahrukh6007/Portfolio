@@ -18,7 +18,7 @@ window.addEventListener("load", () => {
 
 // 1. Typed.js Initialization
 const typed = new Typed('#typed', {
-  strings: ['FRONTEND DEVELOPER', 'UI/UX CREATOR', 'WEB ANIMATION SPECIALIST', 'MODERN WEB DESIGNER', 'SALESFORCE DEVELOPER'],
+  strings: ['PHP DEVELOPER', 'FRONTEND DEVELOPER', 'BACKEND DEVELOPER' , 'UI/UX CREATOR', 'WEB ANIMATION SPECIALIST', 'MODERN WEB DESIGNER', 'SALESFORCE DEVELOPER'],
   typeSpeed: 60,
   backSpeed: 40,
   loop: true,
