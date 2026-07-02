@@ -5,52 +5,40 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SHAHRUKH ALI | Portfolio</title>
+  
+  <!-- CSS Stylesheets -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
-  <link rel="icon" type="image/png/jpeg" href="Portfolio website/fevicon.png">
+  <link rel="icon" type="image/png" href="Portfolio website/favicon.png">
   <link rel="stylesheet" href="style.css">
-
 </head>
 
 <body>
 
   <!-- ===== BOOTSTRAP PAGE LOADER ===== -->
-  <div id="page-loader"
-    class="position-fixed top-0 start-0 w-100 vh-100 d-flex justify-content-center align-items-center">
-
+  <div id="page-loader" class="position-fixed top-0 start-0 w-100 vh-100 d-flex justify-content-center align-items-center">
     <div class="text-center">
-
       <h1 class="loader-logo fw-bold mb-4">
         Welcome<span class="text-info">.</span>
       </h1>
-
       <div class="progress loader-progress mx-auto">
-        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"></div>
+        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 100%"></div>
       </div>
-
     </div>
-
   </div>
-  <nav class="navbar navbar-dark fixed-top bg-transparent" id="mainNavbar">
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-transparent" id="mainNavbar">
     <div class="container nav-container">
-      <div class="text-start">
-        <a class="navbar-brand fw-bold m-0" href="#">SHAHRUKH<span class="text-info">.</span></a>
-      </div>
+      <a class="navbar-brand fw-bold m-0" href="#">SHAHRUKH<span class="text-info">.</span></a>
 
-      <div class="text-center">
-        <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse"
-          data-bs-target="#navMenu">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      </div>
+      <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-      <div class="text-end">
-        <a href="#contact" class="btn btn-outline-info btn-sm px-4 rounded-pill fw-bold">Reach Out</a>
-      </div>
-
-      <div class="collapse navbar-collapse" id="navMenu">
+      <div class="collapse navbar-collapse justify-content-center" id="navMenu">
         <ul class="navbar-nav text-center">
           <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
           <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
@@ -59,99 +47,80 @@
           <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
         </ul>
       </div>
+
+      <div class="d-none d-lg-block">
+        <a href="#contact" class="btn btn-outline-info btn-sm px-4 rounded-pill fw-bold">Reach Out</a>
+      </div>
     </div>
   </nav>
 
+  <!-- ===== HERO SECTION ===== -->
   <header class="hero-section">
     <div id="particles-js"></div>
     <div class="container hero-content">
       <div class="row align-items-center">
         <div class="col-lg-6 text-center text-lg-start">
           <span id="typed" class="typed-text py-4"></span>
-          <h1 class="fw-bold fs-1">
-            Hi, I'm
-          </h1>
+          <h1 class="fw-bold fs-1 mt-2">Hi, I'm</h1>
           <h1 class="display-2 fw-bold mb-3">
-            <span class="typed-text">Shahrukh Ali</span>
+            <span class="text-white">Shahrukh Ali</span>
           </h1>
 
           <h5 class="text-info mb-3">Frontend Developer & UI Enthusiast</h5>
-          <p class="lead text-secondary mb-4">I design and develop modern, high-performance websites with
-            smooth animations and premium user experiences.
-            Focused on clean UI, responsive layouts, and interactive
-            frontend development using modern web technologies.
+          <p class="lead text-secondary mb-4">
+            I design and develop modern, high-performance websites with smooth animations and premium user experiences. 
+            Focused on clean UI, responsive layouts, and interactive frontend development using modern web technologies.
           </p>
-          <a href="#projects" class="btn btn-outline-info btn-sm px-4 rounded-pill fw-bold">Explore My Projects</a>
-          <a href="Portfolio website/Shahrukh Ali PHP Resume.pdf" download="Shahrukh_Ali_Resume.pdf" target="_blank" class="btn btn-outline-info btn-sm px-4 rounded-pill fw-bold">Download
-            CV</a>
-          <div class="social-icons mt-4">
-            <a href="#" class="social-link" target="_blank">
-              <i class="bi bi-twitter-x"></i>
-            </a>
-            <a href="#" class="social-link" target="_blank">
-              <i class="bi bi-linkedin"></i>
-            </a>
-            <a href="#" class="social-link" target="_blank">
-              <i class="bi bi-github"></i>
-            </a>
-            <a href="#" class="social-link" target="_blank">
-              <i class="bi bi-instagram"></i>
-            </a>
-            <a href="#" class="social-link" target="_blank">
-              <i class="fab fa-salesforce"></i>
-            </a>
+          
+          <div class="d-flex flex-wrap gap-2 justify-content-center justify-content-lg-start">
+            <a href="#projects" class="btn btn-outline-info btn-sm px-4 rounded-pill fw-bold">Explore My Projects</a>
+            <a href="Portfolio website/Shahrukh Ali PHP Resume.pdf" download="Shahrukh_Ali_Resume.pdf" target="_blank" class="btn btn-outline-info btn-sm px-4 rounded-pill fw-bold">Download CV</a>
           </div>
 
+          <div class="social-icons mt-4">
+            <a href="#" class="social-link" target="_blank"><i class="bi bi-twitter-x"></i></a>
+            <a href="#" class="social-link" target="_blank"><i class="bi bi-linkedin"></i></a>
+            <a href="#" class="social-link" target="_blank"><i class="bi bi-github"></i></a>
+            <a href="#" class="social-link" target="_blank"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="social-link" target="_blank"><i class="fab fa-salesforce"></i></a>
+          </div>
         </div>
+        
         <div class="col-lg-6 d-none d-lg-block text-center">
-          <img src="Portfolio website/avator.png" alt="Character" class="character-img img-fluid">
+          <img src="Portfolio website/avator.png" alt="Character Avatar" class="character-img img-fluid">
         </div>
       </div>
     </div>
   </header>
 
-  <section class="container mb-5">
+  <!-- ===== ABOUT ME ===== -->
+  <section class="container mb-5 py-5" id="about">
     <div class="row align-items-center">
-
       <div class="col-md-5 text-center mb-4">
-        <img src="Portfolio website/sp.jpg" class="profile-img img-fluid">
+        <img src="Portfolio website/sp.jpg" alt="Shahrukh Profile" class="profile-img img-fluid rounded-3 shadow">
       </div>
 
       <div class="col-md-7">
-        <h2 class="fw-bold">About Me</h2>
-        <h5 class="text-info">Frontend Developer & UI Enthusiast</h5>
-        <h3>Hello, I'm Shahrukh 👋</h3>
+        <h6 class="text-info text-uppercase fw-bold mb-2">Who I Am</h6>
+        <h2 class="fw-bold mb-3">About Me</h2>
+        <h3 class="h4 mb-3">Hello, I'm Shahrukh 👋</h3>
         <p class="text-secondary">
-          I am a passionate <strong>Frontend Developer</strong> focused on creating
-          modern, fast, and visually engaging web experiences. I specialize in
-          building responsive and interactive user interfaces using
-          <strong>HTML, CSS, Bootstrap, and JavaScript</strong> while ensuring
-          clean design and smooth performance across all devices.
-
-          <br><br>
-
-          My goal is to transform ideas into elegant digital products by combining
-          creative design with efficient code. I enjoy crafting premium UI
-          animations, seamless user interactions, and optimized web layouts that
-          deliver both aesthetics and usability.
-
-          <br><br>
-
-          I continuously explore new frontend technologies and best practices to
-          build scalable, high-quality web applications that provide an exceptional
-          user experience.
-
+          I am a passionate <strong>Frontend Developer</strong> focused on creating modern, fast, and visually engaging web experiences. I specialize in building responsive and interactive user interfaces using <strong>HTML, CSS, Bootstrap, and JavaScript</strong> while ensuring clean design and smooth performance across all devices.
         </p>
-        <div class="social-icons">
-          <a href="#"><i class="fab fa-linkedin"></i></a>
-          <a href="#"><i class="bi bi-twitter-x"></i></a>
-          <a href="#"><i class="fab fa-salesforce"></i></a>
+        <p class="text-secondary">
+          My goal is to transform ideas into elegant digital products by combining creative design with efficient code. I enjoy crafting premium UI animations, seamless user interactions, and optimized web layouts that deliver both aesthetics and usability.
+        </p>
+        
+        <div class="social-icons mt-4">
+          <a href="#" class="me-3 text-secondary"><i class="bi bi-linkedin"></i></a>
+          <a href="#" class="me-3 text-secondary"><i class="bi bi-twitter-x"></i></a>
+          <a href="#" class="text-secondary"><i class="fab fa-salesforce"></i></a>
         </div>
-
       </div>
     </div>
   </section>
 
+  <!-- ===== TECHNICAL SKILLS (MARQUEE) ===== -->
   <section class="skills-marquee-section py-5" id="skills">
     <div class="container text-center mb-5">
       <h6 class="text-info text-uppercase fw-bold tracking-widest">Expertise</h6>
@@ -161,88 +130,35 @@
     <div class="container-fluid px-0">
       <div class="skills-wrapper">
         <div class="skills-track" id="skillsTrack">
-          <div class="skill-item">
-            <i class="fab fa-html5 text-danger"></i>
-            <span>HTML5</span>
-          </div>
-          <div class="skill-item">
-            <i class="fab fa-css3-alt text-primary"></i>
-            <span>CSS3</span>
-          </div>
-          <div class="skill-item">
-            <i class="fab fa-js text-warning"></i>
-            <span>JavaScript</span>
-          </div>
-          <div class="skill-item">
-            <i class="fab fa-bootstrap text-info"></i>
-            <span>Bootstrap 5</span>
-          </div>
-          <div class="skill-item">
-            <i class="fab fa-react text-primary"></i>
-            <span>React</span>
-          </div>
-          <div class="skill-item">
-            <i class="fab fa-php text-primary"></i>
-            <span>php</span>
-          </div>
-          <div class="skill-item">
-            <i class="devicon-mysql-plain colored"></i>
-            <span>MySQL</span>
-          </div>
-          <div class="skill-item">
-            <i class="devicon-laravel-original colored"></i>
-            <span>Laravel</span>
-          </div>
-          <div class="skill-item">
-            <i class="devicon-fastapi-plain colored"></i>
-            <span>REST API</span>
-          </div>
-          <div class="skill-item">
-            <i class="fab fa-html5 text-danger"></i>
-            <span>HTML5</span>
-          </div>
-          <div class="skill-item">
-            <i class="fab fa-css3-alt text-primary"></i>
-            <span>CSS3</span>
-          </div>
-          <div class="skill-item">
-            <i class="fab fa-js text-warning"></i>
-            <span>JavaScript</span>
-          </div>
-          <div class="skill-item">
-            <i class="fab fa-bootstrap text-info"></i>
-            <span>Bootstrap 5</span>
-          </div>
-          <div class="skill-item">
-            <i class="fab fa-react text-primary"></i>
-            <span>React</span>
-          </div>
-          <div class="skill-item">
-            <i class="fab fa-php text-primary"></i>
-            <span>php</span>
-          </div>
-          <div class="skill-item">
-            <i class="devicon-mysql-plain colored"></i>
-            <span>MySQL</span>
-          </div>
-          <div class="skill-item">
-            <i class="devicon-laravel-original colored"></i>
-            <span>Laravel</span>
-          </div>
-          <div class="skill-item">
-            <i class="devicon-fastapi-plain colored"></i>
-            <span>REST API</span>
-          </div>
+          <!-- Track Set 1 -->
+          <div class="skill-item"><i class="fab fa-html5 text-danger"></i><span>HTML5</span></div>
+          <div class="skill-item"><i class="fab fa-css3-alt text-primary"></i><span>CSS3</span></div>
+          <div class="skill-item"><i class="fab fa-js text-warning"></i><span>JavaScript</span></div>
+          <div class="skill-item"><i class="fab fa-bootstrap text-info"></i><span>Bootstrap 5</span></div>
+          <div class="skill-item"><i class="fab fa-react text-primary"></i><span>React</span></div>
+          <div class="skill-item"><i class="fab fa-php text-primary"></i><span>PHP</span></div>
+          <div class="skill-item"><i class="devicon-mysql-plain colored"></i><span>MySQL</span></div>
+          <div class="skill-item"><i class="devicon-laravel-original colored"></i><span>Laravel</span></div>
+          <div class="skill-item"><i class="devicon-fastapi-plain colored"></i><span>REST API</span></div>
+          <!-- Track Set 2 (Duplicates for infinite marquee scrolling effect) -->
+          <div class="skill-item"><i class="fab fa-html5 text-danger"></i><span>HTML5</span></div>
+          <div class="skill-item"><i class="fab fa-css3-alt text-primary"></i><span>CSS3</span></div>
+          <div class="skill-item"><i class="fab fa-js text-warning"></i><span>JavaScript</span></div>
+          <div class="skill-item"><i class="fab fa-bootstrap text-info"></i><span>Bootstrap 5</span></div>
+          <div class="skill-item"><i class="fab fa-react text-primary"></i><span>React</span></div>
+          <div class="skill-item"><i class="fab fa-php text-primary"></i><span>PHP</span></div>
+          <div class="skill-item"><i class="devicon-mysql-plain colored"></i><span>MySQL</span></div>
+          <div class="skill-item"><i class="devicon-laravel-original colored"></i><span>Laravel</span></div>
+          <div class="skill-item"><i class="devicon-fastapi-plain colored"></i><span>REST API</span></div>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="cinematic-projects">
-
+  <!-- ===== CINEMATIC PROJECTS ===== -->
+  <section class="cinematic-projects" id="projects">
     <div class="sticky-wrapper">
-
-      <!-- progress -->
+      <!-- Progress Bar Tracker -->
       <div class="project-progress">
         <div class="progress-line"></div>
         <div class="progress-dot active"></div>
@@ -250,78 +166,78 @@
         <div class="progress-dot"></div>
       </div>
 
+      <!-- Slide 1 -->
       <div class="project-slide active">
         <div class="container">
           <div class="row align-items-center">
-            <!-- img -->
-            <div class="col-lg-6 text-center">
-              <img src="components/granthalogo.webp" class="img-fluid project-image" alt="crm">
+            <div class="col-lg-6 text-center mb-4 mb-lg-0">
+              <img src="components/granthalogo.webp" class="img-fluid project-image rounded shadow" alt="Granthaa Systems Dashboard">
             </div>
-            <!-- text -->
             <div class="col-lg-6">
-              <h2>Granthaa Land Developers</h2>
-              <p>Commission and plot sales management system with booking tracking, advisor hierarchy, commission calculation, and reporting dashboard.</p>
+              <h2 class="fw-bold mb-3">Granthaa Land Developers</h2>
+              <p class="text-secondary">Commission and plot sales management system featuring complex booking trackers, automated advisor hierarchy trees, real-time commission calculation scripts, and an analytical reporting dashboard.</p>
             </div>
           </div>
         </div>
       </div>
 
+      <!-- Slide 2 -->
       <div class="project-slide">
         <div class="container">
           <div class="row align-items-center">
-            <!-- img -->
-            <div class="col-lg-6 text-center">
-              <img src="Portfolio website/anushka.png" class="img-fluid project-image" alt="lwc">
+            <div class="col-lg-6 text-center mb-4 mb-lg-0">
+              <img src="Portfolio website/anushka.png" class="img-fluid project-image rounded shadow" alt="Anushka Freight System UI">
             </div>
-            <!-- text -->
             <div class="col-lg-6">
-              <h2>Anushka Freight Carrier</h2>
-              <p>Logistics management system to handle bookings, consignment records, customer records and delivery operations efficiently.</p>
+              <h2 class="fw-bold mb-3">Anushka Freight Carrier</h2>
+              <p class="text-secondary">A fully integrated logistics management system built to handle freight bookings, track active consignment records, securely manage customer archives, and optimize delivery operations efficiently.</p>
+              <div class="mt-3">
+                <a href="https://anushkafreightcarrier.com/" target="_blank" class="btn btn-outline-info btn-sm px-4 rounded-pill fw-bold">Visit Website</a>
+              </div>
             </div>
           </div>
         </div>
       </div>
 
+      <!-- Slide 3 -->
       <div class="project-slide">
         <div class="container">
           <div class="row align-items-center">
-            <!-- img -->
-            <div class="col-lg-6 text-center">
-              <img src="Portfolio website/maha-new-logo.png" class="img-fluid project-image" alt="portfolio">
+            <div class="col-lg-6 text-center mb-4 mb-lg-0">
+              <img src="Portfolio website/maha-new-logo.png" class="img-fluid project-image" alt="Chandrapur Police Government Website Portal">
             </div>
-            <!-- text -->
             <div class="col-lg-6">
-              <h2>Chandrapur Police Website</h2>
-              <p>Contributed to the development of a live government website by implementing UI components and improving responsiveness for better accessibility across devices.</p>
+              <h2 class="fw-bold mb-3">Chandrapur Police Website</h2>
+              <p class="text-secondary">Contributed to development phases of a live government public access portal. Refactored structural UI elements, improved cross-device responsiveness breakpoints, and optimized semantic layout files for compliance and accessibility.</p>
+              <div class="mt-3">
+                <a href="https://chandrapurpolice.gov.in/" target="_blank" class="btn btn-outline-info btn-sm px-4 rounded-pill fw-bold">Visit Website</a>
+              </div>
             </div>
           </div>
         </div>
       </div>
-
     </div>
-
   </section>
 
-  <section id="contact" class="contact-section">
+  <!-- ===== CONTACT SECTION ===== -->
+  <section id="contact" class="contact-section py-5">
     <div class="container">
       <div class="row g-5 align-items-center">
         <div class="col-lg-5">
           <h6 class="text-info text-uppercase fw-bold mb-3">Get in Touch</h6>
-          <h2 class="display-5 fw-bold mb-4 text-white">Let’s Start a <br>New Project.</h2>
-          <p class="text-secondary mb-5">Ready to revolutionize your digital presence? Fill out the form or reach
-            out
-            directly via our secure channels.</p>
+          <h2 class="display-5 fw-bold mb-4 text-white">Let’s Start a<br>New Project.</h2>
+          <p class="text-secondary mb-5">Ready to revolutionize your digital presence? Fill out the form or reach out directly via secure networks.</p>
 
           <div class="d-flex align-items-center mb-4">
-            <div class="contact-info-icon">📧</div>
+            <div class="contact-info-icon me-3 fs-3">📧</div>
             <div>
-              <p class="m-0 text-secondary small">Email us</p>
+              <p class="m-0 text-secondary small">Email me</p>
               <h5 class="m-0 text-white">alishahrukh551@gmail.com</h5>
             </div>
           </div>
 
           <div class="d-flex align-items-center">
-            <div class="contact-info-icon">📍</div>
+            <div class="contact-info-icon me-3 fs-3">📍</div>
             <div>
               <p class="m-0 text-secondary small">Location</p>
               <h5 class="m-0 text-white">Chandrapur, India</h5>
@@ -330,25 +246,26 @@
         </div>
 
         <div class="col-lg-7">
-          <div class="contact-form-card">
+          <div class="contact-form-card p-4 rounded shadow-sm">
             <form id="contact-form">
-              <div class="row">
-                <div class="col-md-6">
+              <div class="row mb-3">
+                <div class="col-md-6 mb-3 mb-md-0">
                   <label class="text-secondary small mb-2">Name</label>
-                  <input type="text" class="form-control" name="name" placeholder="Name" required>
+                  <input type="text" class="form-control" name="name" placeholder="Your Name" required>
                 </div>
                 <div class="col-md-6">
                   <label class="text-secondary small mb-2">Email</label>
                   <input type="email" class="form-control" name="email" placeholder="john@example.com" required>
                 </div>
               </div>
-              <label class="text-secondary small mb-2">Subject</label>
-              <input type="text" class="form-control" name="subject" placeholder="Project Inquiry">
-
-              <label class="text-secondary small mb-2">Message</label>
-              <textarea class="form-control" rows="4" name="message" placeholder="Tell us about your vision..."
-                required></textarea>
-
+              <div class="mb-3">
+                <label class="text-secondary small mb-2">Subject</label>
+                <input type="text" class="form-control" name="subject" placeholder="Project Inquiry">
+              </div>
+              <div class="mb-4">
+                <label class="text-secondary small mb-2">Message</label>
+                <textarea class="form-control" rows="4" name="message" placeholder="Tell me about your vision..." required></textarea>
+              </div>
               <button type="submit" class="btn btn-info w-100 fw-bold py-3 text-dark">Send Message</button>
             </form>
           </div>
@@ -357,34 +274,32 @@
     </div>
   </section>
 
-  <footer>
+  <!-- ===== FOOTER ===== -->
+  <footer class="py-4 border-top border-secondary border-opacity-25">
     <div class="container">
       <div class="row align-items-center">
         <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
           <a class="navbar-brand fw-bold text-white" href="#">SHAHRUKH<span class="text-info">.</span></a>
-          <p class="text-secondary small mt-2 mb-0">© 2024 Synth AI Digital. All rights reserved.</p>
+          <p class="text-secondary small mt-2 mb-0">© 2026 Shahrukh Ali. All rights reserved.</p>
         </div>
         <div class="col-md-6 text-center text-md-end">
-          <div class="social-links">
-            <a href="#" class="text-secondary mx-2 text-decoration-none"><i class="bi bi-twitter-x"></i> Twitter</a>
-            <a href="#" class="text-secondary mx-2 text-decoration-none"><i class="fab fa-github"></i> GitHub</a>
-            <a href="#" class="text-secondary mx-2 text-decoration-none"><i class="fab fa-linkedin"></i>
-              LinkedIn</a>
-            <a href="#" class="text-secondary mx-2 text-decoration-none"><i class="fab fa-salesforce"></i>
-              TrailHead</a>
+          <div class="social-links d-flex justify-content-center justify-content-md-end gap-3 flex-wrap">
+            <a href="#" class="text-secondary text-decoration-none small"><i class="bi bi-twitter-x"></i> Twitter</a>
+            <a href="#" class="text-secondary text-decoration-none small"><i class="fab fa-github"></i> GitHub</a>
+            <a href="#" class="text-secondary text-decoration-none small"><i class="fab fa-linkedin"></i> LinkedIn</a>
+            <a href="#" class="text-secondary text-decoration-none small"><i class="fab fa-salesforce"></i> Trailhead</a>
           </div>
         </div>
       </div>
     </div>
   </footer>
 
+  <!-- Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
   <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
   <script src="script.js"></script>
-
-
 </body>
 
 </html>
