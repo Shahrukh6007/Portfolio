@@ -4,304 +4,447 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SHAHRUKH ALI | Portfolio</title>
-  
-  <!-- CSS Stylesheets -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
-  <link rel="icon" type="image/png" href="Portfolio website/favicon.png">
+  <title>Shahrukh Ali - Laravel & PHP Developer</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet">
+
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+  <!-- Custom cursor -->
+   <div class="cursor" id="cursor"></div>
 
-  <!-- ===== BOOTSTRAP PAGE LOADER ===== -->
-  <div id="page-loader" class="position-fixed top-0 start-0 w-100 vh-100 d-flex justify-content-center align-items-center">
-    <div class="text-center">
-      <h1 class="loader-logo fw-bold mb-4">
-        Welcome<span class="text-info">.</span>
-      </h1>
-      <div class="progress loader-progress mx-auto">
-        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 100%"></div>
-      </div>
+  <!-- Site-wide grain -->
+   <div class="grain"></div>
+
+  <!-- ===== LOADER ===== -->
+  <div id="loader">
+    <div class="loader-inner">
+      <div class="loader-count mono">000</div>
+      <div class="loader-label mono">Loading</div>
     </div>
+    <div class="loader-bar"></div>
   </div>
 
-  <!-- ===== NAVIGATION ===== -->
-  <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-transparent" id="mainNavbar">
-    <div class="container nav-container">
-      <a class="navbar-brand fw-bold m-0" href="#">SHAHRUKH<span class="text-info">.</span></a>
+  <!-- ===== NAV ===== -->
+  <nav class="nav" id="nav">
+    <div class="container nav-inner">
+      <a href="#home" class="wordmark">SHAHRUKH ALI<span>.</span></a>
 
-      <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
-        <span class="navbar-toggler-icon"></span>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
       </button>
 
-      <div class="collapse navbar-collapse justify-content-center" id="navMenu">
-        <ul class="navbar-nav text-center">
-          <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      <div class="nav-menu" id="navMenu">
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
-      </div>
-
-      <div class="d-none d-lg-block">
-        <a href="#contact" class="btn btn-outline-info btn-sm px-4 rounded-pill fw-bold">Reach Out</a>
+        <a href="#contact" class="nav-cta">Get in Touch <span>↗</span></a>
       </div>
     </div>
   </nav>
 
-  <!-- ===== HERO SECTION ===== -->
-  <header class="hero-section">
-    <div id="particles-js"></div>
-    <div class="container hero-content">
-      <div class="row align-items-center">
-        <div class="col-lg-6 text-center text-lg-start">
-          <span id="typed" class="typed-text py-4"></span>
-          <h1 class="fw-bold fs-1 mt-2">Hi, I'm</h1>
-          <h1 class="display-2 fw-bold mb-3">
-            <span class="text-white">Shahrukh Ali</span>
-          </h1>
+  <!-- ===== HERO ===== -->
+  <header class="hero" id="home">
+    <div class="container hero-inner">
 
-          <h5 class="text-info mb-3">Frontend Developer & UI Enthusiast</h5>
-          <p class="lead text-secondary mb-4">
-            I design and develop modern, high-performance websites with smooth animations and premium user experiences. 
-            Focused on clean UI, responsive layouts, and interactive frontend development using modern web technologies.
-          </p>
-          
-          <div class="d-flex flex-wrap gap-2 justify-content-center justify-content-lg-start">
-            <a href="#projects" class="btn btn-outline-info btn-sm px-4 rounded-pill fw-bold">Explore My Projects</a>
-            <a href="Portfolio website/Shahrukh Ali PHP Resume.pdf" download="Shahrukh_Ali_Resume.pdf" target="_blank" class="btn btn-outline-info btn-sm px-4 rounded-pill fw-bold">Download CV</a>
-          </div>
-
-          <div class="social-icons mt-4">
-            <a href="https://x.com/Ali_Shahrukh1" class="social-link" target="_blank"><i class="bi bi-twitter-x"></i></a>
-            <a href="https://www.linkedin.com/in/shahrukh-ali-dev/" class="social-link" target="_blank"><i class="bi bi-linkedin"></i></a>
-            <a href="https://github.com/Shahrukh6007" class="social-link" target="_blank"><i class="bi bi-github"></i></a>
-            <a href="#" class="social-link" target="_blank"><i class="bi bi-instagram"></i></a>
-            <a href="https://www.salesforce.com/trailblazer/shah6007" class="social-link" target="_blank"><i class="fab fa-salesforce"></i></a>
-          </div>
-        </div>
-        
-        <div class="col-lg-6 d-none d-lg-block text-center">
-          <img src="Portfolio website/avator.png" alt="Character Avatar" class="character-img img-fluid">
-        </div>
+      <div class="hero-meta mono">
+        <span><span class="dot"></span> Available for work</span>
+        <span>Chandrapur, IN</span>
       </div>
+
+      <div class="hero-role mono">
+        <span class="bracket">[</span>
+        <span id="typed" class="typed-text"></span>
+        <span class="bracket">]</span>
+      </div>
+
+      <h1 class="hero-title">
+        <span class="line"><span>SHAHRUKH</span></span>
+        <span class="line"><span>ALI<span class="accent">.</span></span></span>
+      </h1>
+
+      <p class="hero-sub">
+        Laravel &amp; PHP developer building production systems end to end —
+        schema, API, deploy, interface.
+      </p>
+
+      <div class="hero-actions">
+        <a href="#projects" class="cta-link mono">See Work <span>↓</span></a>
+        <a href="#Shahrukh_Ali.pdf" download class="cta-link mono">Download CV <span>↗</span></a>
+      </div>
+
     </div>
+    <div class="hero-grain"></div>
   </header>
 
-  <!-- ===== ABOUT ME ===== -->
-  <section class="container mb-5 py-5" id="about">
-    <div class="row align-items-center">
-      <div class="col-md-5 text-center mb-4">
-        <img src="Portfolio website/sp.jpg" alt="Shahrukh Profile" class="profile-img img-fluid rounded-3 shadow">
+  <!-- ===== MARQUEE ===== -->
+  <section class="marquee-band" id="marquee1">
+    <div class="marquee-track">
+      <div class="marquee-content">
+        <span class="marquee-item">Laravel</span>
+        <span class="marquee-sep">✦</span>
+        <span class="marquee-item">PHP</span>
+        <span class="marquee-sep">✦</span>
+        <span class="marquee-item">REST APIs</span>
+        <span class="marquee-sep">✦</span>
+        <span class="marquee-item">MYSQL</span>
+        <span class="marquee-sep">✦</span>
+        <span class="marquee-item">Sanctum</span>
+        <span class="marquee-sep">✦</span>
+        <span class="marquee-item">JWT</span>
+        <span class="marquee-sep">✦</span>
+        <span class="marquee-item">Tailwind</span>
+        <span class="marquee-sep">✦</span>
+        <span class="marquee-item">JavaScript</span>
+        <span class="marquee-sep">✦</span>
       </div>
 
-      <div class="col-md-7">
-        <h6 class="text-info text-uppercase fw-bold mb-2">Who I Am</h6>
-        <h2 class="fw-bold mb-3">About Me</h2>
-        <h3 class="h4 mb-3">Hello, I'm Shahrukh 👋</h3>
-        <p class="text-secondary">
-          I am a passionate <strong>Frontend Developer</strong> focused on creating modern, fast, and visually engaging web experiences. I specialize in building responsive and interactive user interfaces using <strong>HTML, CSS, Bootstrap, and JavaScript</strong> while ensuring clean design and smooth performance across all devices.
+      <div class="marquee-content" aria-hidden="true">
+        <span class="marquee-item">Laravel</span>
+        <span class="marquee-sep">✦</span>
+        <span class="marquee-item">PHP</span>
+        <span class="marquee-sep">✦</span>
+        <span class="marquee-item">REST APIs</span>
+        <span class="marquee-sep">✦</span>
+        <span class="marquee-item">MYSQL</span>
+        <span class="marquee-sep">✦</span>
+        <span class="marquee-item">Sanctum</span>
+        <span class="marquee-sep">✦</span>
+        <span class="marquee-item">JWT</span>
+        <span class="marquee-sep">✦</span>
+        <span class="marquee-item">Tailwind</span>
+        <span class="marquee-sep">✦</span>
+        <span class="marquee-item">JavaScript</span>
+        <span class="marquee-sep">✦</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section class="about" id="about">
+    <div class="container about-grid">
+
+      <div class="about-label">
+        <span class="mono">02 - About</span>
+        <h2 class="about-vertical">ABOUT</h2>
+      </div>
+
+      <div class="about-body">
+
+        <p class="about-lead">
+          I'm Shahrukh Ali — a Laravel and PHP developer based in Chandrapur, India.
+          I build production systems end to end: database schema, API layer, deployment,
+          and the frontend that ties it together.
         </p>
-        <p class="text-secondary">
-          My goal is to transform ideas into elegant digital products by combining creative design with efficient code. I enjoy crafting premium UI animations, seamless user interactions, and optimized web layouts that deliver both aesthetics and usability.
+
+        <p class="about-text">
+          At Softgrowth Infotech I started on frontend and grew into full-stack as the role
+          expanded. Today I work on business applications for real estate, logistics, and
+          government clients — designing MySQL schemas, building REST APIs with Sanctum and
+          JWT authentication, implementing role-based access control, and shipping to
+          cPanel-hosted production environments.
         </p>
-        
-        <div class="social-icons mt-4">
-          <a href="https://www.linkedin.com/in/shahrukh-ali-dev/" class="me-3 text-secondary"><i class="bi bi-linkedin"></i></a>
-          <a href="https://x.com/Ali_Shahrukh1" class="me-3 text-secondary"><i class="bi bi-twitter-x"></i></a>
-          <a href="https://www.salesforce.com/trailblazer/shah6007" class="text-secondary"><i class="fab fa-salesforce"></i></a>
+
+        <p class="about-text">
+          I care about clean architecture, honest interfaces, and systems that hold up
+          under real traffic. Currently sharpening my skills in testing, CI workflows,
+          and modern frontend tooling.
+        </p>
+
+        <div class="about-stats">
+          <div class="stat">
+            <span class="stat-num">02+</span>
+            <span class="stat-label mono">Years production</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">04+</span>
+            <span class="stat-label mono">Live deployments</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">01</span>
+            <span class="stat-label mono">Govt portal</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">B.E.</span>
+            <span class="stat-label mono">Computer Engg.</span>
+          </div>
         </div>
+
       </div>
     </div>
   </section>
 
-  <!-- ===== TECHNICAL SKILLS (MARQUEE) ===== -->
-  <section class="skills-marquee-section py-5" id="skills">
-    <div class="container text-center mb-5">
-      <h6 class="text-info text-uppercase fw-bold tracking-widest">Expertise</h6>
-      <h2 class="display-4 fw-bold text-white">Technical Skills</h2>
+  <!-- ===== PROJECTS ===== -->
+  <section class="projects" id="projects">
+
+    <div class="projects-intro container">
+      <span class="mono">03 — Selected Work</span>
+      <h2 class="projects-heading">Projects</h2>
     </div>
 
-    <div class="container-fluid px-0">
-      <div class="skills-wrapper">
-        <div class="skills-track" id="skillsTrack">
-          <!-- Track Set 1 -->
-          <div class="skill-item"><i class="fab fa-html5 text-danger"></i><span>HTML5</span></div>
-          <div class="skill-item"><i class="fab fa-css3-alt text-primary"></i><span>CSS3</span></div>
-          <div class="skill-item"><i class="fab fa-js text-warning"></i><span>JavaScript</span></div>
-          <div class="skill-item"><i class="fab fa-bootstrap text-info"></i><span>Bootstrap 5</span></div>
-          <div class="skill-item"><i class="fab fa-react text-primary"></i><span>React</span></div>
-          <div class="skill-item"><i class="fab fa-php text-primary"></i><span>PHP</span></div>
-          <div class="skill-item"><i class="devicon-mysql-plain colored"></i><span>MySQL</span></div>
-          <div class="skill-item"><i class="devicon-laravel-original colored"></i><span>Laravel</span></div>
-          <div class="skill-item"><i class="devicon-fastapi-plain colored"></i><span>REST API</span></div>
-          <!-- Track Set 2 (Duplicates for infinite marquee scrolling effect) -->
-          <div class="skill-item"><i class="fab fa-html5 text-danger"></i><span>HTML5</span></div>
-          <div class="skill-item"><i class="fab fa-css3-alt text-primary"></i><span>CSS3</span></div>
-          <div class="skill-item"><i class="fab fa-js text-warning"></i><span>JavaScript</span></div>
-          <div class="skill-item"><i class="fab fa-bootstrap text-info"></i><span>Bootstrap 5</span></div>
-          <div class="skill-item"><i class="fab fa-react text-primary"></i><span>React</span></div>
-          <div class="skill-item"><i class="fab fa-php text-primary"></i><span>PHP</span></div>
-          <div class="skill-item"><i class="devicon-mysql-plain colored"></i><span>MySQL</span></div>
-          <div class="skill-item"><i class="devicon-laravel-original colored"></i><span>Laravel</span></div>
-          <div class="skill-item"><i class="devicon-fastapi-plain colored"></i><span>REST API</span></div>
+    <article class="project-card" data-accent="lime">
+      <div class="project-inner container">
+        <div class="project-top mono">
+          <span>01 / 04</span>
+          <span>2024 — Present</span>
+        </div>
+
+        <div class="project-body">
+          <h3 class="project-title">Granthaa<br>Land Developers</h3>
+          <p class="project-desc">
+            Property sales management system with multi-level advisor hierarchy,
+            RBAC, and automated commission calculation replacing a manual workflow.
+            5+ REST endpoints for booking, onboarding, and reporting.
+          </p>
+          <div class="project-stack mono">
+            Laravel · PHP · MySQL · Sanctum · JWT · Tailwind
+          </div>
+        </div>
+
+        <div class="project-foot">
+          <div class="project-line"></div>
+          <a href="https://granthaadeveloperpvtltd.com/" target="_blank" rel="noopener" class="project-link mono">
+            Visit Site <span>↗</span>
+          </a>
         </div>
       </div>
-    </div>
+    </article>
+
+    <article class="project-card" data-accent="orange">
+      <div class="project-inner container">
+        <div class="project-top mono">
+          <span>02 / 04</span>
+          <span>2024</span>
+        </div>
+
+        <div class="project-body">
+          <h3 class="project-title">Anushka<br>Freight Carrier</h3>
+          <p class="project-desc">
+            Logistics and transport management platform handling LR records,
+            invoices, vehicles, and freight operations. Secure authentication,
+            validation layers, and production deployment across live records.
+          </p>
+          <div class="project-stack mono">
+            Laravel · PHP · MySQL · JavaScript · Bootstrap · Git
+          </div>
+        </div>
+
+        <div class="project-foot">
+          <div class="project-line"></div>
+          <a href="https://anushkafreightcarriers.in/" target="_blank" rel="noopener" class="project-link mono">
+            Visit Site <span>↗</span>
+          </a>
+        </div>
+      </div>
+    </article>
+
+    <article class="project-card" data-accent="white">
+      <div class="project-inner container">
+        <div class="project-top mono">
+          <span>03 / 04</span>
+          <span>2024</span>
+        </div>
+
+        <div class="project-body">
+          <h3 class="project-title">Chandrapur<br>Police Portal</h3>
+          <p class="project-desc">
+            Government records portal handling confidential police data, FIR
+            records, incharge transfers, and department updates. Built and
+            deployed to NIC server under government security compliance.
+          </p>
+          <div class="project-stack mono">
+            HTML5 · CSS3 · JavaScript · Bootstrap · Git
+          </div>
+        </div>
+
+        <div class="project-foot">
+          <div class="project-line"></div>
+          <a href="https://chandrapurpolice.gov.in/" target="_blank" rel="noopener" class="project-link mono">
+            Visit Site <span>↗</span>
+          </a>
+        </div>
+      </div>
+    </article>
+
+    <article class="project-card" data-accent="muted">
+      <div class="project-inner container">
+        <div class="project-top mono">
+          <span>04 / 04</span>
+          <span>2023</span>
+        </div>
+
+        <div class="project-body">
+          <h3 class="project-title">Balivansh<br>College</h3>
+          <p class="project-desc">
+            Institutional website for a nursing and healthcare college.
+            Responsive layout across devices, clean content structure,
+            and standard institutional information architecture.
+          </p>
+          <div class="project-stack mono">
+            HTML5 · CSS3 · JavaScript · Bootstrap
+          </div>
+        </div>
+
+        <div class="project-foot">
+          <div class="project-line"></div>
+          <a href="https://bcynhm.org/" target="_blank" rel="noopener" class="project-link mono">
+            Visit Site <span>↗</span>
+          </a>
+        </div>
+      </div>
+    </article>
+
   </section>
 
-  <!-- ===== CINEMATIC PROJECTS ===== -->
-  <section class="cinematic-projects" id="projects">
-    <div class="sticky-wrapper">
-      <!-- Progress Bar Tracker -->
-      <div class="project-progress">
-        <div class="progress-line"></div>
-        <div class="progress-dot active"></div>
-        <div class="progress-dot"></div>
-        <div class="progress-dot"></div>
-      </div>
-
-      <!-- Slide 1 -->
-      <div class="project-slide active">
-        <div class="container">
-          <div class="row align-items-center">
-            <div class="col-lg-6 text-center mb-4 mb-lg-0">
-              <img src="components/granthalogo.webp" class="img-fluid project-image rounded shadow" alt="Granthaa Systems Dashboard">
-            </div>
-            <div class="col-lg-6">
-              <h2 class="fw-bold mb-3">Granthaa Land Developers</h2>
-              <p class="text-secondary">Commission and plot sales management system featuring complex booking trackers, automated advisor hierarchy trees, real-time commission calculation scripts, and an analytical reporting dashboard.</p>
-              <div class="mt-3">
-                <a href="https://granthaadeveloperpvtltd.com/" target="_blank" class="btn btn-outline-info btn-sm px-4 rounded-pill fw-bold">Visit Website</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Slide 2 -->
-      <div class="project-slide">
-        <div class="container">
-          <div class="row align-items-center">
-            <div class="col-lg-6 text-center mb-4 mb-lg-0">
-              <img src="Portfolio website/anushka.png" class="img-fluid project-image rounded shadow" alt="Anushka Freight System UI">
-            </div>
-            <div class="col-lg-6">
-              <h2 class="fw-bold mb-3">Anushka Freight Carrier</h2>
-              <p class="text-secondary">A fully integrated logistics management system built to handle freight bookings, track active consignment records, securely manage customer archives, and optimize delivery operations efficiently.</p>
-              <div class="mt-3">
-                <a href="https://anushkafreightcarrier.com/" target="_blank" class="btn btn-outline-info btn-sm px-4 rounded-pill fw-bold">Visit Website</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Slide 3 -->
-      <div class="project-slide">
-        <div class="container">
-          <div class="row align-items-center">
-            <div class="col-lg-6 text-center mb-4 mb-lg-0">
-              <img src="Portfolio website/maha-new-logo.png" class="img-fluid project-image" alt="Chandrapur Police Government Website Portal">
-            </div>
-            <div class="col-lg-6">
-              <h2 class="fw-bold mb-3">Chandrapur Police Website</h2>
-              <p class="text-secondary">Contributed to development phases of a live government public access portal. Refactored structural UI elements, improved cross-device responsiveness breakpoints, and optimized semantic layout files for compliance and accessibility.</p>
-              <div class="mt-3">
-                <a href="https://chandrapurpolice.gov.in/" target="_blank" class="btn btn-outline-info btn-sm px-4 rounded-pill fw-bold">Visit Website</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== CONTACT SECTION ===== -->
-  <section id="contact" class="contact-section py-5">
+  <!-- ===== SKILLS ===== -->
+  <section class="skills" id="skills">
     <div class="container">
-      <div class="row g-5 align-items-center">
-        <div class="col-lg-5">
-          <h6 class="text-info text-uppercase fw-bold mb-3">Get in Touch</h6>
-          <h2 class="display-5 fw-bold mb-4 text-white">Let’s Start a<br>New Project.</h2>
-          <p class="text-secondary mb-5">Ready to revolutionize your digital presence? Fill out the form or reach out directly via secure networks.</p>
 
-          <div class="d-flex align-items-center mb-4">
-            <div class="contact-info-icon me-3 fs-3">📧</div>
-            <div>
-              <p class="m-0 text-secondary small">Email me</p>
-              <h5 class="m-0 text-white">alishahrukh551@gmail.com</h5>
+      <div class="skills-intro">
+        <span class="mono">04 — Capabilities</span>
+        <h2 class="skills-heading">Skills</h2>
+      </div>
+
+      <div class="skills-sheet">
+
+        <div class="skill-row">
+          <span class="skill-num mono">01</span>
+          <span class="skill-category mono">Backend</span>
+          <span class="skill-list">Laravel · PHP · REST APIs · MVC Architecture · Laravel Sanctum · JWT Authentication ·
+            Role-Based Access Control · PHPUnit</span>
+        </div>
+
+        <div class="skill-row">
+          <span class="skill-num mono">02</span>
+          <span class="skill-category mono">Database</span>
+          <span class="skill-list">MySQL · Schema Design · Query Optimization · Migrations · phpMyAdmin</span>
+        </div>
+
+        <div class="skill-row">
+          <span class="skill-num mono">03</span>
+          <span class="skill-category mono">Frontend</span>
+          <span class="skill-list">HTML5 · CSS3 · JavaScript · Bootstrap · Tailwind CSS · jQuery</span>
+        </div>
+
+        <div class="skill-row">
+          <span class="skill-num mono">04</span>
+          <span class="skill-category mono">Tools &amp; Environment</span>
+          <span class="skill-list">Git · GitHub · Postman · VS Code · Jira · cPanel · XAMPP · Apache · Cron
+            Scheduling</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="contact" id="contact">
+    <div class="container">
+
+      <div class="contact-intro">
+        <span class="mono">05 — Contact</span>
+        <h2 class="contact-heading">
+          Let's Build<br>Something<span class="accent">.</span>
+        </h2>
+      </div>
+
+      <div class="contact-grid">
+
+        <div class="contact-left">
+          <p class="contact-lead">
+            Have a project in mind, or need a Laravel developer
+            who can handle the whole stack? Send a message.
+          </p>
+
+          <a href="mailto:alishahrukh551@gmail.com" class="contact-email">
+            <span>alishahrukh551</span>
+            <span class="email-at">@</span>
+            <span>gmail.com</span>
+          </a>
+
+          <div class="contact-meta">
+            <div class="meta-item">
+              <span class="mono">Location</span>
+              <span>Chandrapur, Maharashtra, India</span>
             </div>
-          </div>
-
-          <div class="d-flex align-items-center">
-            <div class="contact-info-icon me-3 fs-3">📍</div>
-            <div>
-              <p class="m-0 text-secondary small">Location</p>
-              <h5 class="m-0 text-white">Chandrapur, India</h5>
+            <div class="meta-item">
+              <span class="mono">Availability</span>
+              <span>Open to freelance and full-time</span>
             </div>
           </div>
         </div>
 
-        <div class="col-lg-7">
-          <div class="contact-form-card p-4 rounded shadow-sm">
-            <form id="contact-form">
-              <div class="row mb-3">
-                <div class="col-md-6 mb-3 mb-md-0">
-                  <label class="text-secondary small mb-2">Name</label>
-                  <input type="text" class="form-control" name="name" placeholder="Your Name" required maxlength="50" pattern="[A-Za-z\s]+">
-                </div>
-                <div class="col-md-6">
-                  <label class="text-secondary small mb-2">Email</label>
-                  <input type="email" class="form-control" name="email" placeholder="john@example.com" required>
-                </div>
-              </div>
-              <div class="mb-3">
-                <label class="text-secondary small mb-2">Subject</label>
-                <input type="text" class="form-control" name="subject" placeholder="Project Inquiry">
-              </div>
-              <div class="mb-4">
-                <label class="text-secondary small mb-2">Message</label>
-                <textarea class="form-control" rows="4" name="message" placeholder="Tell me about your vision..." required maxlength="1000"></textarea>
-              </div>
-              <button type="submit" class="btn btn-info w-100 fw-bold py-3 text-dark">Send Message</button>
-            </form>
-          </div>
+        <div class="contact-right">
+          <form id="contact-form" class="contact-form">
+            <div class="field">
+              <label for="name" class="mono">Name</label>
+              <input type="text" id="name" name="name" required maxlength="50" placeholder="Your name">
+            </div>
+
+            <div class="field">
+              <label for="email" class="mono">Email</label>
+              <input type="email" id="email" name="email" required placeholder="you@example.com">
+            </div>
+
+            <div class="field">
+              <label for="subject" class="mono">Subject</label>
+              <input type="text" id="subject" name="subject" placeholder="What's this about?">
+            </div>
+
+            <div class="field">
+              <label for="message" class="mono">Message</label>
+              <textarea id="message" name="message" rows="4" required maxlength="1000"
+                placeholder="Tell me about your project..."></textarea>
+            </div>
+
+            <button type="submit" class="form-submit mono">
+              Send Message <span>↗</span>
+            </button>
+          </form>
         </div>
+
       </div>
     </div>
   </section>
 
   <!-- ===== FOOTER ===== -->
-  <footer class="py-4 border-top border-secondary border-opacity-25">
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-          <a class="navbar-brand fw-bold text-white" href="#">SHAHRUKH<span class="text-info">.</span></a>
-          <p class="text-secondary small mt-2 mb-0">© 2026 Shahrukh Ali. All rights reserved.</p>
-        </div>
-        <div class="col-md-6 text-center text-md-end">
-          <div class="social-links d-flex justify-content-center justify-content-md-end gap-3 flex-wrap">
-            <a href="https://x.com/Ali_Shahrukh1" class="text-secondary text-decoration-none small"><i class="bi bi-twitter-x"></i> Twitter</a>
-            <a href="https://github.com/Shahrukh6007" class="text-secondary text-decoration-none small"><i class="fab fa-github"></i> GitHub</a>
-            <a href="https://www.linkedin.com/in/shahrukh-ali-dev/" class="text-secondary text-decoration-none small"><i class="fab fa-linkedin"></i> LinkedIn</a>
-            <a href="https://www.salesforce.com/trailblazer/shah6007" class="text-secondary text-decoration-none small"><i class="fab fa-salesforce"></i> Trailhead</a>
-          </div>
-        </div>
+  <footer class="footer">
+    <div class="container footer-inner">
+
+      <div class="footer-brand">
+        <a href="#home" class="wordmark">SHAHRUKH ALI<span>.</span></a>
+        <span class="mono footer-note">Laravel &amp; PHP Developer</span>
       </div>
+
+      <div class="footer-links">
+        <a href="https://x.com/Ali_Shahrukh1" target="_blank" rel="noopener" class="mono">Twitter ↗</a>
+        <a href="https://github.com/Shahrukh6007" target="_blank" rel="noopener" class="mono">GitHub ↗</a>
+        <a href="https://www.linkedin.com/in/shahrukh-ali-dev/" target="_blank" rel="noopener" class="mono">LinkedIn
+          ↗</a>
+        <a href="https://www.salesforce.com/trailblazer/shah6007" target="_blank" rel="noopener" class="mono">Trailhead
+          ↗</a>
+      </div>
+
+      <div class="footer-bottom mono">
+        <span>© <span id="year"></span> Shahrukh Ali</span>
+        <span id="clock">00:00:00 IST</span>
+      </div>
+
     </div>
   </footer>
 
-  <!-- Scripts -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
   <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
   <script src="script.js"></script>
 </body>
 
